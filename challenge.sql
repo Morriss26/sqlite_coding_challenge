@@ -19,6 +19,7 @@ SELECT
 
 -- Task 2
 --Logic: Calculate the revenue for each product category by summing up line totals grouped by the product category.
+SELECT
 p.category,
 ROUND(SUM(oi.quantity * oi.unit_price), 2) AS revenue
 FROM products p
@@ -29,6 +30,7 @@ ORDER BY revenue DESC;
 -- Task 3
 --Logic: Calculated the average salary for each department compared to employee salaries by joining the employees table 
 --with a subquery that calculates the average salary for each department.
+SELECT
 e.first_name,
 e.last_name,
 d.name AS department_name,
